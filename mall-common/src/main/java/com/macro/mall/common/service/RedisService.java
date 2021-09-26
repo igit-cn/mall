@@ -1,11 +1,11 @@
-package com.macro.mall.security.service;
+package com.macro.mall.common.service;
 
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
 /**
- * redis操作Service
+ * Redis操作Service
  * Created by macro on 2020/3/3.
  */
 public interface RedisService {
@@ -88,7 +88,7 @@ public interface RedisService {
     /**
      * 直接设置整个Hash结构
      */
-    void hSetAll(String key, Map<String, Object> map);
+    void hSetAll(String key, Map<String, ?> map);
 
     /**
      * 删除Hash结构中的属性
